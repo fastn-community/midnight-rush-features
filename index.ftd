@@ -1,5 +1,6 @@
 -- import: fastn-community.github.io/features-doc/docs
 -- import: fastn-community.github.io/midnight-rush-features
+-- import: fastn-community.github.io/midnight-rush-features/components
 -- import: fastn-community.github.io/features-doc/data
 export: feature
 
@@ -29,21 +30,8 @@ caption title:
 optional body subtitle:
 data.feature list feature-list:
 
-;; =============================================================================
-;; =====================<IMPLEMENT THE FEATURES LIST HERE>=========================
-;; =============================================================================
-
--- ftd.text: Implement the **Features** component here
-color: $inherited.colors.text
-background.solid: $inherited.colors.background.base
-width: fill-container
-height: fill-container
-text-align: center
-role: $inherited.types.copy-regular
-padding-vertical.px: 32
-
-;; =============================================================================
-;; ================================== END ======================================
-;; =============================================================================
+-- components.feature-helper: $features.title
+subtitle: $features.subtitle
+feature-list: $features.feature-list
 
 -- end: features
